@@ -6,29 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/Dark.css" id="theme" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div class="wrapper flex flex-col">
         <div class="container">
-            <div class="header-container">
-                <h1 id="toast">Calculator</h1>
-                <!-- <div class="top-buttons">
-                    <a href="https://github.com/Priyanka-Pathade/Calculator">
-                        <img src="./assests/git.png" alt="Sun Icon" height="22.5" width="22.5" id="github-icon">
-                    </a>
-                    <button type="bu" onclick="changeTheme()" class="theme-button">
-                        <img src="./assests/SunIcon.png" alt="Theme Icon" height="20" width="20" id="theme-icon">
-                    </button>
-                </div> -->
-            </div>
             <div class="first-row">
-                <input type="text" name="result" id="result" placeholder="Result" readonly />
-                <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+                <input type="text" name="result" id="result" placeholder="0" readonly />
+                <input type="button" value="Clear" onclick="result.value=''" id="clear-button" />
             </div>
             <div class="second-row">
                 <input type="button" value="1" onclick="liveScreen(1)" />
@@ -54,6 +43,20 @@
                 <input type="button" value="." onclick="liveScreen('.')" />
                 <input type="button" value="=" onclick="calculate(result.value)" />
             </div>
+            <!-- <div class="header-container"> -->
+                <p id="toast"><b>Calculator App by Priyanka Pathade</b></p>
+                <div class="top-buttons">
+                    <div>
+                        <a href="https://github.com/Priyanka-Pathade/Calculator">
+                            <img src="./assests/git.png" alt="Sun Icon" height="22.5" width="22.5" id="github-icon">
+                        </a>
+                    </div>
+                    
+                    <!-- <button type="bu" onclick="changeTheme()" class="theme-button">
+                        <img src="./assests/SunIcon.png" alt="Theme Icon" height="20" width="20" id="theme-icon">
+                    </button> -->
+                </div>
+            <!-- </div> -->
         </div>
     </div>
     <script src="./script.js"></script>
